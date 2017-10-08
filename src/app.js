@@ -18,6 +18,6 @@ $(function(){
      */
     $('.filters [type=checkbox]').on('change', function(){
         var selected = $(this).attr('id');  //fetch the id of the checked filter
-        $(`.content [data-type=${selected}]`).fadeToggle(); //hide the corresponding fruit card
+        $('.content [data-type=' + selected + ']').fadeToggle(); //hide the corresponding fruit card
     });
 });
